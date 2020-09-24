@@ -16,6 +16,21 @@ class BoardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        let numbers = [1, 2, 3]
+//
+//        for number in numbers {
+//            print(number)
+//        }
+//
+//        print("This is the count \(numbers.count)")
+//
+//        for index in (0...numbers.count) {
+//
+//            print(numbers[index])
+//            print(index)
+//        }
+
         
         for button in buttons {
             button.layer.borderWidth = 2.0
