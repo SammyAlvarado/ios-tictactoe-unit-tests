@@ -9,7 +9,7 @@
 import UIKit
 
 class GameViewController: UIViewController, BoardViewControllerDelegate {
-    
+
     private enum GameState {
         case active(GameBoard.Mark) // Active player
         case cat
@@ -17,8 +17,9 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
     }
     
     @IBAction func restartGame(_ sender: Any) {
-        board = GameBoard()
-        gameState = .active(.x)
+
+//        board = GameBoard()
+//        gameState = .active(.x)
     }
     
     // MARK: - BoardViewControllerDelegate

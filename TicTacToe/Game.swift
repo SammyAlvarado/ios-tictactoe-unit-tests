@@ -10,16 +10,29 @@ import Foundation
 
 struct Game {
 
+    var viewController: GameViewController?
+
+    private(set) var board: GameBoard
+
+    internal var activePlayer: GameBoard.Mark?
+    internal var gameIsOver: Bool
+    internal var winningPlayer: GameBoard.Mark?
+
+
+
+
+
+
     mutating internal func restart() {
+        board = GameBoard()
+        gameState = .active(.x)
+
 
     }
+    
     mutating internal func makeMark(at coordinate: Coordinate) throws {
         
     }
 
-  private(set) var board: GameBoard
 
-  internal var activePlayer: GameBoard.Mark?
-  internal var gameIsOver: Bool
-  internal var winningPlayer: GameBoard.Mark?
 }
